@@ -1,31 +1,42 @@
 # CodeAlpha Project Management Tool
 
-A simple Trello/Asana-style full-stack project management application.
+## Project Description
 
-## Technologies
-- HTML
-- CSS
+The Employee Management System is a full-stack web application designed to manage employee information efficiently.
+
+The application provides a simple interface for adding, viewing, updating, and managing employee records. It uses a frontend built with HTML, CSS, and JavaScript, with an Express.js backend and MongoDB database.
+
+## Technologies Used
+
+- HTML5
+- CSS3
 - JavaScript
 - Node.js
 - Express.js
 - MongoDB
-- JWT authentication
+- Git & GitHub
 
-## Features
-- User registration/login
-- Create group projects
-- Create and assign tasks
-- Three task columns: To Do, In Progress, Done
-- Change task status
-- Comments inside tasks
-- Delete tasks
-- MongoDB persistence
+## ✨ Features
 
-## Run
-1. Install Node.js and MongoDB.
-2. Open this folder in VS Code.
-3. Run `npm install`.
-4. Copy `.env.example` to `.env`.
-5. Start MongoDB.
-6. Run `npm start`.
-7. Open `http://localhost:5001`.
+- Add new employee records
+- View employee information
+- Update employee details
+- Delete employee records
+- Store employee data in MongoDB
+- REST API using Express.js
+- Simple and user-friendly interface
+
+## Project Structure
+
+```text
+CodeAlpha_EmployeeManagementSystem/
+│
+├── index.html
+├── style.css
+├── app.js
+├── server.js
+├── package.json
+├── .env.example
+├── .gitignore
+├── README.md
+
