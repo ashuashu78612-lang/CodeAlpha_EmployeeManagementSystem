@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - Project Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>TaskFlow</h1>
+  <div>
+    <button onclick="openAuth()">Login</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<main>
+  <section class="topbar">
+    <div>
+      <h2>Project Dashboard</h2>
+      <p id="welcome"></p>
+    </div>
+    <button class="primary" onclick="createProject()">+ New Project</button>
+  </section>
+
+  <div id="projects"></div>
+
+  <section id="auth" class="modal hidden">
+    <div class="modal-box">
+      <h2>Login / Register</h2>
+      <input id="authName" placeholder="Name for registration">
+      <input id="authEmail" type="email" placeholder="Email">
+      <input id="authPassword" type="password" placeholder="Password">
+      <button class="primary" onclick="login()">Login</button>
+      <button onclick="register()">Register</button>
+      <button onclick="closeAuth()">Close</button>
+      <p id="authMsg"></p>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

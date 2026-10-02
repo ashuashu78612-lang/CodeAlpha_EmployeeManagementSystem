@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f4f6; color: #111827; }
+header { background: #1f2937; color: white; padding: 16px 25px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { margin: 0; }
+button { border: 0; border-radius: 7px; padding: 9px 13px; cursor: pointer; margin: 3px; }
+.primary { background: #2563eb; color: white; }
+main { max-width: 1200px; margin: auto; padding: 25px; }
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.project { background: white; border-radius: 12px; padding: 20px; margin-bottom: 25px; box-shadow: 0 3px 12px #0001; }
+.board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px; }
+.column { background: #f3f4f6; padding: 12px; border-radius: 10px; min-height: 180px; }
+.column h3 { margin-top: 0; }
+.task { background: white; padding: 12px; margin: 10px 0; border-radius: 8px; box-shadow: 0 1px 5px #0002; }
+.task strong { display: block; margin-bottom: 6px; }
+.comment { font-size: 13px; border-top: 1px solid #ddd; padding-top: 6px; margin-top: 7px; }
+input, textarea, select { width: 100%; padding: 10px; margin: 6px 0; border: 1px solid #ccc; border-radius: 6px; }
+textarea { resize: vertical; }
+.modal { position: fixed; inset: 0; background: #0008; display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal-box { background: white; padding: 25px; border-radius: 12px; width: min(420px, 92%); }
+.hidden { display: none !important; }
+@media(max-width:800px) { .board { grid-template-columns: 1fr; } .topbar { flex-direction: column; align-items: flex-start; } }
